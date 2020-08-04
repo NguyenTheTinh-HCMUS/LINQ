@@ -1,0 +1,9 @@
+﻿+ AnonymousType in C# is the type which do not have a name
++ C# allows you to create an object with the new keyword without defining its class
++ The implicitly typed variable- "var" is used to hold the reference of anonymous types
++ anonymous type is reference type 
++ anonymous type only be used read-only -> not change its value
++ you cannot pass an anonymous for anotore methed , 
+	however you can pass it for a method that accepts a paramaters of dynamic type ===>>>>
++ You can pass an method for paramater with dynamic type 
++ SelectLinq used anonymous type as a result wof query that not define any class 
