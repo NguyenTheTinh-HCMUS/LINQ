@@ -1,0 +1,15 @@
+﻿
++ LINQ is Uniform querry syntax in C3 and VB.Net used to save and retrieve data from 
+	differrent sources like object collections, SQL server or XML etc.
++ Features:
+	- implicity type local variables
+	- lambda expressions
+	- extesion method
+	- anonymous types
++ two set of standard query operators:
+	- IEnumerable ->  in memmory collections
+	- IQueryable  ->  out of process memmory collections
++ method to write LINQ query
+	- querry syntax and querry expression syntax
+	- method syntax and method extension syntax or fluent
+
