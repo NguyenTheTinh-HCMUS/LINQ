@@ -1,0 +1,4 @@
+﻿+ Implicitly typed variables(var): are those types variables whicj are declare without specififying the
+	.NET type explicity
++ The type of variable is automaticly deduced at compile time from value
+	to "initiallize" the variable
