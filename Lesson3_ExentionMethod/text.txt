@@ -1,0 +1,5 @@
+﻿+ Extension method: allow you to add mthod or properties to a class or
+	structure,without modifying the original type in any direct mananer
+
++ The secod point is that, the fist parameter of the extension method must 
+	be of the type for which the extension method is applicabe, prceded by the "this" keyword
