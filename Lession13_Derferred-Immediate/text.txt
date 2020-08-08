@@ -6,3 +6,11 @@
 	- The query is actually executed at some point after
 		the construction of the querry 
 	- It always gives you the lastest data
+
++ Immediate Querry Execution
+	- In constrast to deferred exection of querries that produce a sequence
+		of values,queries that return a singleton value are executed immediately.
+	- Eg of singleton queries are Avarage,Count,Fist and Max.
+	- To force  the immediate execution of a querry that does not produce
+		a singleton value, you can call the ToList method or ToArray method
+

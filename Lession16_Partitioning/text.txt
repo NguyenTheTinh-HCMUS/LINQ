@@ -1,0 +1,15 @@
+﻿+ Partitioning
+	- Take: takes an input paramater count and return the first 
+		count objects from the sequence
+	- Skip: taekes an input paramater count and skips the fisrt count
+		objects of the sequence 
+	- TakeWhile: takes a predicate and starts iterating through the sequence,
+		selecting each ietm,as long as the predicate evaluates to true
+		for that item.As soon as predicate returns its fist false,that item
+			and the rest of items are rejected
+	- Skipwhile: takes a predicate and starts iterating through the sequence, and 
+		skps each item as long as the predicate evaluates to true for that ite.
+		As soon as the predicate return its fist false,that item ans the rest of the item are selected
+
+
+

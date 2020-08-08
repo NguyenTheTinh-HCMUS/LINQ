@@ -1,0 +1,4 @@
+﻿- Element Operators
+	+ Fist, FirstOrDefault
+	+ Last,LastOrDefault
+	+ ElementAt,ElementAtOrDefault

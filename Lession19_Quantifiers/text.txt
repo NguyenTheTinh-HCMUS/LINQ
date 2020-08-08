@@ -1,0 +1,4 @@
+﻿+ Quantifiers
+	- Any
+	- Some
+	- contains

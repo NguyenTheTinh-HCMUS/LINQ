@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-namespace Lession13_Derferred_Immediate
+namespace Lession16_Partitioning
 {
     class Program
     {
@@ -47,32 +47,30 @@ namespace Lession13_Derferred_Immediate
         {
             // all student details
             IList<Student> allStud = Student.GetAll();
-            // QuerY Syntax
-            //var mystud = from s in allStud
-            //             select new
-            //             {
-            //                StudentName= s.Name,
-            //                 s.Rollno
-            //             }; 
-            // Method Syntax
-            var mystud = allStud.
-                Where(s => s.Age < 15).
-                Select(s => s).
-                OrderBy(s => s.Age).
-                ThenByDescending(s => s.Rollno).ToList();
-            Student st = new Student() { 
-                Rollno= 10,
-                Name="Nguyen Van A",
-                Age=10,
-                Area="Vietnamese",
-                Subjects=new string[]{ "C","C++"}
-            };
-            allStud.Add(st);
-            foreach (var s in mystud)
+
+
+
+
+            IEnumerable<Student> last1 = allStud.Take(3);
+
+            Console.WriteLine("Take fist 3 records\n");
+
+            foreach (Student s in last1)
             {
                 Console.WriteLine(s);
 
             }
+            IEnumerable<Student> last2 = allStud.Skip(3);
+            Console.WriteLine("\nSkip fist 3 records\n");
+
+            foreach(Student s in last2)
+            {
+                Console.WriteLine(s);
+
+            }
+
+
+
 
 
 

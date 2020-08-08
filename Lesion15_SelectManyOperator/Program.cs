@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-namespace Lession13_Derferred_Immediate
+namespace Lesion15_SelectManyOperator
 {
     class Program
     {
@@ -47,28 +47,29 @@ namespace Lession13_Derferred_Immediate
         {
             // all student details
             IList<Student> allStud = Student.GetAll();
-            // QuerY Syntax
-            //var mystud = from s in allStud
-            //             select new
-            //             {
-            //                StudentName= s.Name,
-            //                 s.Rollno
-            //             }; 
-            // Method Syntax
-            var mystud = allStud.
-                Where(s => s.Age < 15).
-                Select(s => s).
-                OrderBy(s => s.Age).
-                ThenByDescending(s => s.Rollno).ToList();
-            Student st = new Student() { 
-                Rollno= 10,
-                Name="Nguyen Van A",
-                Age=10,
-                Area="Vietnamese",
-                Subjects=new string[]{ "C","C++"}
-            };
-            allStud.Add(st);
-            foreach (var s in mystud)
+
+            // using syxtax querry
+
+            ////IEnumerable<string> mystud = from s in allStud
+            ////             from sb in s.Subjects
+            ////             select sb;
+
+
+
+            ////foreach (string s in mystud)
+            ////{
+            ////    Console.WriteLine(s);
+
+            ////}
+
+            // using method querry
+
+
+            IEnumerable<string> mystud = allStud.SelectMany(s=>s.Subjects);
+
+
+
+            foreach (string s in mystud)
             {
                 Console.WriteLine(s);
 
@@ -80,3 +81,4 @@ namespace Lession13_Derferred_Immediate
         }
     }
 }
+

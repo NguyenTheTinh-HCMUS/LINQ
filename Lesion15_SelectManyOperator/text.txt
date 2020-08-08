@@ -1,0 +1,3 @@
+﻿+ SelectMany
+	- Certain type of queries return collections of collections
+	- This method flattens these results to a sigle collection

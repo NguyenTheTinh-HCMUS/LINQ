@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-namespace Lession13_Derferred_Immediate
+
+namespace Lession14_AggregateOperators
 {
     class Program
     {
@@ -60,12 +61,13 @@ namespace Lession13_Derferred_Immediate
                 Select(s => s).
                 OrderBy(s => s.Age).
                 ThenByDescending(s => s.Rollno).ToList();
-            Student st = new Student() { 
-                Rollno= 10,
-                Name="Nguyen Van A",
-                Age=10,
-                Area="Vietnamese",
-                Subjects=new string[]{ "C","C++"}
+            Student st = new Student()
+            {
+                Rollno = 10,
+                Name = "Nguyen Van A",
+                Age = 10,
+                Area = "Vietnamese",
+                Subjects = new string[] { "C", "C++" }
             };
             allStud.Add(st);
             foreach (var s in mystud)
