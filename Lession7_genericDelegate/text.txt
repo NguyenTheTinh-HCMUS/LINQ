@@ -1,0 +1,10 @@
+﻿+ Fuc: Fuc is a generic delegate. It has zero or more input paramaters
+	and one out paramater.It ust return a value.
++ Action: An Action type delegate is the same as Func delegate 
+	except that the Action delegate doese not return a value.
++ Predicate: it is used to verify certain critain of method and returns 
+	output as Boolean,either TRUE or FASE
++ All these inbuilt generic delegates can use with:
+	any method
+	anonymous method
+	lambda expression

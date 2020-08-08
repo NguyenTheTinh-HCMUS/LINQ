@@ -1,0 +1,4 @@
+﻿+ Anonymous Method: is a method without a name
++ It is defined using the delegate keyword and assiged to a variable of
+	delegate type
++ It is used in a situation where creaeting a new method is unwanted overhead

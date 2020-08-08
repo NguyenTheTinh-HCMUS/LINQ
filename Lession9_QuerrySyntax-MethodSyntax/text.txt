@@ -1,0 +1,16 @@
+﻿+ Querry syntax or Querry Expression Syntax
+
++ Method Syntax or Method extension syntax or Fluent Syntax
+
++ You can combine both forms.sss
+
+
+
++ Query syntax looks very SQL statement.
+	form
+		let
+		where
+		order by
+		group 
+		select
+		into

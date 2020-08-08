@@ -1,0 +1,8 @@
+﻿+ Deferred querry Execution
+	- The querry is excecuted when the the querry variable is
+		iterated over in the foreach statement
+	- With deferred query exection,the querry variable does not
+		hold the querry result--it only stores the querry command
+	- The query is actually executed at some point after
+		the construction of the querry 
+	- It always gives you the lastest data

@@ -1,0 +1,2 @@
+﻿+ The lambda expression is simple way of representing anonymous methods;
+

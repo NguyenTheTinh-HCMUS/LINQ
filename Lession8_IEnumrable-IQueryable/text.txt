@@ -1,0 +1,12 @@
+﻿+ IEnumrable and IQueryable
+
++ LINQ provides rwo sets of standard query operators,one set operate
+	on objectsof type IEnumrable<T> and other set operate on objects of type
+		IQueryable<T>
+
++ The querry methos which are extended from IEnumrable<T>.operate
+	in-memmory collections.
+
++ The query methos whcih are extened from IQueryable<T>,operate on 
+	out-of-process memmory collections and built an expression tree that
+	represents the query to be performed

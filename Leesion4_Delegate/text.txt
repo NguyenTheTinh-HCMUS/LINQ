@@ -1,0 +1,6 @@
+﻿+ A delegate is an object which refers to a method,it is like  apoint to a function.
++ Delegate type is declare using the delegate keyword
++ Once a delegate is declare,delegate instance will refer and call 
++ Delegate are mainly used in implement ing the call-back and events
++ You can use amononymous method inline delegate
++  making writing lampda become more convenient
